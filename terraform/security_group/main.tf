@@ -9,6 +9,6 @@ resource "aws_security_group" "security_group_name" {
 
   ingress {
     to_port     = 8000
-    cidr_blocks = 0.0.0.0/0
+    cidr_blocks = "0.0.0.0/0"
   }
 }
