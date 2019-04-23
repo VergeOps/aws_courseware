@@ -8,7 +8,9 @@ resource "aws_security_group" "security_group_name" {
   vpc_id      = "vpc-594fdb23"
 
   ingress {
+    from_port   = 8000
     to_port     = 8000
-    cidr_blocks = "0.0.0.0/0"
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
   }
 }
