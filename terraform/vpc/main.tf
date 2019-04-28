@@ -19,16 +19,6 @@ resource "aws_vpc" "this" {
   }
 }
 
-# We don't use the "Main" route table to avoid confusion with implicitly assigned subnets.
-# Exolicit is better than implicit.
-resource "aws_default_route_table" "this" {
-  default_route_table_id = "${aws_vpc.this.default_route_table_id}"
-
-  tags {
-    Name = "${var.vpc_name}-ig-main-route-table-not-used"
-  }
-}
-
 # ------------------------------------------
 # INTERNET GATEWAY
 # ------------------------------------------
