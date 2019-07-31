@@ -3,6 +3,6 @@
   "Statement": {
     "Effect": "Allow",
     "Action": "s3:ListBucket",
-    "Resource": "arn:aws:s3:::aws-course-test-bucket"
+    "Resource": "arn:aws:s3:::aws-course-test-bucket2"
   }
 }
