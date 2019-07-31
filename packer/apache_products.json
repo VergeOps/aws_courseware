@@ -30,8 +30,8 @@
             "inline":[
                 "sudo apt-get update",
                 "sudo apt-get install -y apache2",
-                "sudo chmod 777 /var/www/index.html",
-                "sudo echo 'products' > /var/www/index.html"
+                "sudo chmod 777 /var/www/html/index.html",
+                "sudo echo 'products' > /var/www/html/index.html"
             ]
         }
     ]
